@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>产品布局测试</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+  
+    <script src="https://cdn.staticfile.org/font-awesome/5.8.0/js/fontawesome.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.14.7/umd/popper.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="./assets/img/logo/icon.png" sizes="180x180">
+    <link rel="icon" href="./assets/img/logo/favicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="./assets/img/logo/favicon.png">
+    <!-- Favicons -->
+
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <nav class="navbar navbar-expand-md  navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#"><img src="./assets/img/logo/header_logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">产品中心 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">解决方案</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">关于我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">联系我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">博客</a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!-- 导航栏 -->
+
+
+
+    <div class="container">
+        <hr>
+        <!-- 面包屑导航 -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+        </nav>
+
+        <!-- 左侧边栏 + 内容 -->
+        <div class="row">
+            <script>
+                $(document).ready(function () {
+                    // 增加向有的箭头
+                    $(".collapse.show").each(function () {
+                        $(this).prev(".card-header").find(".fas").addClass("fa-chevron-down").removeClass("fa-chevron-right");
+                    });
+
+                    // 当有触发时，向下的箭头 ----  向右的箭头   来回切换
+                    $(".collapse").on('show.bs.collapse', function () {
+                        $(this).prev(".card-header").find(".fas").removeClass("fa-chevron-right").addClass("fa-chevron-down");
+                    }).on('hide.bs.collapse', function () {
+                        $(this).prev(".card-header").find(".fas").removeClass("fa-chevron-down").addClass("fa-chevron-right");
+                    });
+                });
+            </script>
+            <!-- 左侧边栏 -->
+            <div class="col-12 col-md-3">
+
+                <!-- 搜索框 与 折叠按键 -->
+                <form class="bd-search d-flex align-items-center">
+                    <input type="search" class="form-control" id="search-input" placeholder="Search..."
+                        aria-label="Search for..." autocomplete="off" data-docs-version="4.3">
+                    <button class="btn btn-link d-md-none p-0 ml-3" type="button" data-toggle="collapse"
+                        data-target="#accordionSideBar" aria-controls="accordionSideBar">
+                        <i class="fas fa-list-ul" style="font-size: 30px;"></i>
+                    </button>
+                </form>
+
+                <!-- 一级菜单A -->
+                <div class="accordion collapse show" id="accordionSideBar">
+                    <div class="card">
+                        <a class="card-header" data-toggle="collapse" data-target="#SideBarA" aria-expanded="true"
+                            aria-controls="SideBarA">
+                            <span>产品A</span>
+                            <i class="fas fa-chevron-down pt-1 float-right" style="font-size: 16px;"></i>
+                        </a>
+                        <div class="list-group collapse show" id="SideBarA" data-parent="#accordionSideBar">
+                            <a href="#" class="list-group-item list-group-item-action">A.a1</a>
+                            <a href="#" class="list-group-item list-group-item-action">产品A.a2</a>
+                            <a href="#" class="list-group-item list-group-item-action active">产品A.a3</a>
+                            <a href="#" class="list-group-item list-group-item-action">产品A.a4</a>
+                        </div>
+                    </div>
+                    <!-- 一级菜单B -->
+                    <div class="card">
+                        <a class="card-header" data-toggle="collapse" data-target="#SideBarB" aria-expanded="true"
+                            aria-controls="SideBarB">
+                            <span>产品B</span>
+                            <i class="fas fa-chevron-down pt-1 float-right" style="font-size: 16px;"></i>
+                        </a>
+                        <div class="list-group collapse" id="SideBarB" data-parent="#accordionSideBar">
+                            <a href="#" class="list-group-item list-group-item-action">产品B.a1</a>
+                            <a href="#" class="list-group-item list-group-item-action">产品B.a2</a>
+                            <a href="#" class="list-group-item list-group-item-action">产品B.a3</a>
+                            <a href="#" class="list-group-item list-group-item-action">产品B.a4</a>
+                        </div>
+                    </div>
+                    <!-- 一级菜单C -->
+                    <div class="card">
+                        <a class="card-header" data-toggle="collapse" data-target="#SideBarC" aria-expanded="true"
+                            aria-controls="SideBarC">
+                            <span>产品C</span>
+                            <i class="fas fa-chevron-down pt-1 float-right" style="font-size: 16px;"></i>
+                        </a>
+                        <div class="list-group collapse" id="SideBarC" data-parent="#accordionSideBar">
+                            <a href="#" class="list-group-item list-group-item-action">产品C.a1</a>
+                            <a href="#" class="list-group-item list-group-item-action">产品C.a2</a>
+                            <a href="#" class="list-group-item list-group-item-action">产品C.a3</a>
+                            <a href="#" class="list-group-item list-group-item-action">产品C.a4</a>
+                        </div>
+                    </div>
+                    <!-- 一级菜单D -->
+                    <div class="card">
+                        <a class="card-header" data-toggle="collapse" data-target="#SideBarD" aria-expanded="true"
+                            aria-controls="SideBarD">
+                            <span>产品D</span>
+                            <i class="fas fa-chevron-down pt-1 float-right" style="font-size: 16px;"></i>
+                        </a>
+                        <div class="list-group collapse" id="SideBarD" data-parent="#accordionSideBar">
+                            <a href="#" class="list-group-item list-group-item-action ">产品D.a1</a>
+                            <a href="#" class="list-group-item list-group-item-action">产品D.a2</a>
+                            <a href="#" class="list-group-item list-group-item-action">产品D.a3</a>
+                            <a href="#" class="list-group-item list-group-item-action">产品D.a4</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header">
+                        联系我们
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><i class="fas fa-user" style="font-size: 18x;">:侯经理</i></p>
+                            <p><i class="fas fa-comment-dots" style="font-size: 18x;">:18202289663</i></p>
+                            <p><i class="fas fa-folder" style="font-size: 18x;">:18202289663@163.com</i></p>
+                        </p>
+                    </div>
+                </div>
+
+                <br>
+                <div class="card">
+                    <div class="card-header">
+                        关于我们
+                    </div>
+                    <div class="card-body">
+                        <img class="img-fluid" src="./assets/img/logo/construction_logo.png">
+                        <br>
+                        <p class="card-text">
+                            天津北宿科技有限公司是致力于永磁分选行业的专业设备制造商，依托国际领先的磁力分选和振动输送技术，以设计制造高性能设备为目标，为业界提供高性能高品质设计的磁力分选、磁力自动化和振动输送设备。
+                        </p>
+                        <a href="#" class="btn btn-info">联系我们</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧内容 -->
+            <main class="col-12 col-md-9">
+                <div class="card">
+                    <div class="card-header">
+                        产品A
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">简介</h5>
+                        <p class="card-text cite">
+                            悬挂式永磁除铁器可与各型皮带输送机，振动输送机或溜槽等配套使用，可从运动的物料中清除铁磁性物，以达到净化物料，提高物料品位或保护下道工序设备的目的。
+                        </p>
+                        <a href="#" class="btn btn-info">获得报价</a>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr class="table-info">
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -3,8 +3,8 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 66px;
+
   color: #5a5a5a;
 }
 
@@ -67,6 +67,7 @@ body {
 }
 
 
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -87,4 +88,25 @@ body {
   .featurette-heading {
     margin-top: 7rem;
   }
+}
+
+
+
+
+
+
+
+.bd-search {
+  position: relative;
+  padding: 1rem 15px;
+  margin-right: -15px;
+  margin-left: -15px;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #a8abad;
+  border-color: #a8abad;
 }
