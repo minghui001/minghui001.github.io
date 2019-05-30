@@ -7,7 +7,7 @@
     <title>产品布局测试</title>
     <meta name="keywords" content="磁选机、除铁器、给料机">
     <meta name="description"
-      content="天津北宿科技有限公司是致力于永磁分选行业的专业设备制造商，依托国际领先的磁力分选和振动输送技术，以设计制造高性能设备为目标，为业界提供高性能高品质设计的磁力分选、磁力自动化和振动输送设备。凭借丰富的专业技术领域应用经验，为企业解决产品加工、纯化以及质量评审中遇到的难题。产品应用涵盖：食品、医药、化工、电池、烟草、塑料、玻璃、陶瓷、造纸、颜料、水泥、金属加工等诸多领域。">
+        content="天津北宿科技有限公司是致力于永磁分选行业的专业设备制造商，依托国际领先的磁力分选和振动输送技术，以设计制造高性能设备为目标，为业界提供高性能高品质设计的磁力分选、磁力自动化和振动输送设备。凭借丰富的专业技术领域应用经验，为企业解决产品加工、纯化以及质量评审中遇到的难题。产品应用涵盖：食品、医药、化工、电池、烟草、塑料、玻璃、陶瓷、造纸、颜料、水泥、金属加工等诸多领域。">
     <meta name="author" content="天津北宿科技有限公司">
 
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.8.2/css/all.css">
@@ -25,12 +25,14 @@
     <link rel="icon" href="../assets/img/logo/favicon.png">
     <!-- Favicons -->
 
+
+
 </head>
 
 <body>
     <!-- 导航栏 -->
     <header>
-        <nav class="navbar navbar-expand-md  navbar-dark fixed-top bg-dark">
+        <nav class="navbar navbar-expand-md  navbar-dark  bg-dark">
             <a class="navbar-brand" href="#"><img src="../assets/img/logo/header_logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,21 +83,7 @@
 
         <!-- 左侧边栏 + 内容 -->
         <div class="row">
-            <script>
-                $(document).ready(function () {
-                    // 增加向有的箭头
-                    $(".collapse.show").each(function () {
-                        $(this).prev(".card-header").find(".fas").addClass("fa-chevron-down").removeClass("fa-chevron-right");
-                    });
 
-                    // 当有触发时，向下的箭头 ----  向右的箭头   来回切换
-                    $(".collapse").on('show.bs.collapse', function () {
-                        $(this).prev(".card-header").find(".fas").removeClass("fa-chevron-right").addClass("fa-chevron-down");
-                    }).on('hide.bs.collapse', function () {
-                        $(this).prev(".card-header").find(".fas").removeClass("fa-chevron-down").addClass("fa-chevron-right");
-                    });
-                });
-            </script>
             <!-- 左侧边栏 -->
             <div class="col-12 col-md-3">
 
@@ -107,6 +95,7 @@
                         data-target="#accordionSideBar" aria-controls="accordionSideBar">
                         <i class="fas fa-list-ul" style="font-size: 30px;"></i>
                     </button>
+                    <br>
                 </form>
 
                 <!-- 一级菜单A -->
@@ -176,7 +165,7 @@
                         <p class="card-text">
                             <p><i class="fas fa-user" style="font-size: 18x;">:侯经理</i></p>
                             <p><i class="fas fa-comment-dots" style="font-size: 18x;">:18202289663</i></p>
-                            <p><i class="fas fa-folder" style="font-size: 18x;">:18202289663@163.com</i></p>
+                            <p><i class="fas fa-envelope" style="font-size: 18x;">:18202289663@163.com</i></p>
                         </p>
                     </div>
                 </div>
@@ -198,74 +187,165 @@
             </div>
 
             <!-- 右侧内容 -->
-            <main class="col-12 col-md-9">
-                <div class="card">
-                    <div class="card-header">
-                        产品A
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">简介</h5>
-                        <p class="card-text cite">
-                            悬挂式永磁除铁器可与各型皮带输送机，振动输送机或溜槽等配套使用，可从运动的物料中清除铁磁性物，以达到净化物料，提高物料品位或保护下道工序设备的目的。
-                        </p>
-                        <a href="#" class="btn btn-info">获得报价</a>
-                    </div>
-                </div>
-                <div class="card text-center">
-                    <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Active</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-info">Go somewhere</a>
-                    </div>
+            <main class="col-12 col-md-9 ">
+
+                <!-- 滚动导航 -->
+                    <h1>磁力架</h1>
+
+                <div id="navbar-example2">
+                        <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#productDescription">产品概述</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#productSpecifications">规格参数</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#dataDownload">资料下载</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#productOptions">产品选项</a>
+                                </li>
+                            </ul>
                 </div>
 
-                <table class="table table-bordered">
-                    <thead>
-                        <tr class="table-info">
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <!-- 文章主要内容 -->
+                <div data-spy="scroll" data-target="#navbar-example2">
+                    <!-- 产品概述 -->
+                    <br>
+                    <div id="productDescription" class="shadow p-3 mb-5 bg-white rounded">
+                        <p>易清理液态管道捕集器可与管道连接，用于清除料浆中的铁质污染物。</p>
+                        <p>当料浆流经捕集器套管表面时，铁质污染物被吸附在套管表面，将磁系和套管一同取出后， 磁系与套管分离即可达到快速清除铁质污染物的目的。</p>
+                    </div>
+                    <div class="alert alert-primary" role="alert">
+                        磁棒、磁力架、强磁磁棒；
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            产品A
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">简介</h5>
+                            <p class="card-text cite">
+                                悬挂式永磁除铁器可与各型皮带输送机，振动输送机或溜槽等配套使用，可从运动的物料中清除铁磁性物，以达到净化物料，提高物料品位或保护下道工序设备的目的。
+                            </p>
+                            <a href="#" class="btn btn-info">获得报价</a>
+                        </div>
+                    </div>
+                    <!-- end产品概述 -->
+                    <!-- 规格型号 -->
+                    <span id="productSpecifications" class="d-block p-2 bg-dark text-white">productSpecifications</span>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <!-- end规格型号 -->
+                    <!-- 资料下载 -->
+                    <h4 id="dataDownload">资料下载</h4>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <!-- end 资料下载 -->
+                    <!-- 产品选项 -->
+                    <h4 id="productOptions">产品选项</h4>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <!-- end产品选项 -->
+                    <h4 id="questionAndAnswer">产品问答</h4>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="table-info">
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- end文章主要内容 -->
+                <!--end滚动导航 -->
+
             </main>
 
         </div>
 
     </div>
+    <script>
+        $(document).ready(function () {
+            // 增加向有的箭头
+            $(".collapse.show").each(function () {
+                $(this).prev(".card-header").find(".fas").addClass("fa-chevron-down").removeClass("fa-chevron-right");
+            });
+
+            // 当有触发时，向下的箭头 ----  向右的箭头   来回切换
+            $(".collapse").on('show.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fas").removeClass("fa-chevron-right").addClass("fa-chevron-down");
+            }).on('hide.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fas").removeClass("fa-chevron-down").addClass("fa-chevron-right");
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        var top = $("#navbar-example2").offset().top;
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 150) {
+                $("#navbar-example2").attr("class", "navbar navbar-light bg-light sticky-top");
+            } else {
+                $("#navbar-example2").attr("class", "navbar navbar-light bg-light");
+            }
+        }).trigger("scroll");
+    </script>
 </body>
 
 </html>

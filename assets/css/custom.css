@@ -3,10 +3,11 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 66px;
-
+  /* padding-top: 66px; */
+  
   color: #5a5a5a;
 }
+
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -110,3 +111,5 @@ body {
   background-color: #a8abad;
   border-color: #a8abad;
 }
+
+
