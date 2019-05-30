@@ -29,7 +29,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-productDetails" data-offset="50">
     <!-- 导航栏 -->
     <header>
         <nav class="navbar navbar-expand-md  navbar-dark  bg-dark">
@@ -157,6 +157,7 @@
                     </div>
                 </div>
                 <br>
+                <!-- 联系我们 -->
                 <div class="card">
                     <div class="card-header">
                         联系我们
@@ -169,8 +170,9 @@
                         </p>
                     </div>
                 </div>
-
                 <br>
+                <!-- end联系我们 -->
+                <!-- 关于我们 -->
                 <div class="card">
                     <div class="card-header">
                         关于我们
@@ -184,143 +186,221 @@
                         <a href="#" class="btn btn-info">联系我们</a>
                     </div>
                 </div>
+                <!-- end关于我们 -->
             </div>
 
             <!-- 右侧内容 -->
             <main class="col-12 col-md-9 ">
 
+
+                <h1>磁力架</h1>
+
                 <!-- 滚动导航 -->
-                    <h1>磁力架</h1>
-
-                <div id="navbar-example2">
-                        <ul class="nav nav-pills">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#productDescription">产品概述</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#productSpecifications">规格参数</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#dataDownload">资料下载</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#productOptions">产品选项</a>
-                                </li>
-                            </ul>
-                </div>
-
-                <!-- 文章主要内容 -->
-                <div data-spy="scroll" data-target="#navbar-example2">
-                    <!-- 产品概述 -->
-                    <br>
-                    <div id="productDescription" class="shadow p-3 mb-5 bg-white rounded">
-                        <p>易清理液态管道捕集器可与管道连接，用于清除料浆中的铁质污染物。</p>
-                        <p>当料浆流经捕集器套管表面时，铁质污染物被吸附在套管表面，将磁系和套管一同取出后， 磁系与套管分离即可达到快速清除铁质污染物的目的。</p>
-                    </div>
-                    <div class="alert alert-primary" role="alert">
-                        磁棒、磁力架、强磁磁棒；
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            产品A
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">简介</h5>
-                            <p class="card-text cite">
-                                悬挂式永磁除铁器可与各型皮带输送机，振动输送机或溜槽等配套使用，可从运动的物料中清除铁磁性物，以达到净化物料，提高物料品位或保护下道工序设备的目的。
-                            </p>
-                            <a href="#" class="btn btn-info">获得报价</a>
-                        </div>
-                    </div>
-                    <!-- end产品概述 -->
-                    <!-- 规格型号 -->
-                    <span id="productSpecifications" class="d-block p-2 bg-dark text-white">productSpecifications</span>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <!-- end规格型号 -->
-                    <!-- 资料下载 -->
-                    <h4 id="dataDownload">资料下载</h4>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <!-- end 资料下载 -->
-                    <!-- 产品选项 -->
-                    <h4 id="productOptions">产品选项</h4>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <!-- end产品选项 -->
-                    <h4 id="questionAndAnswer">产品问答</h4>
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr class="table-info">
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- end文章主要内容 -->
+                <nav id="navbar-productDetails">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productDescription">产品概述</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productSpecifications">规格参数</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productOptions">产品选项</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#questionAndAnswer">产品问答</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#dataDownload">资料下载</a>
+                        </li>
+                    </ul>
+                </nav>
                 <!--end滚动导航 -->
 
+                <!-- 文章主要内容 -->
+                <div>
+                    <!-- 产品概述 -->
+                    <div id="productDescription" style="padding-top:70px;">
+                        <div class="row my-3">
+                            <div class="col-md-5">
+                                <img class="img-fluid shadow p-3 mb-5 bg-white rounded"
+                                    src="../assets/img/logo/square_logo.jpg">
+                            </div>
+                            <div class="col-md-7">
+                                <br>
+                                <p>易清理液态管道捕集器可与管道连接，用于清除料浆中的铁质污染物。</p>
+                                <p>当料浆流经捕集器套管表面时，铁质污染物被吸附在套管表面，将磁系和套管一同取出后， 磁系与套管分离即可达到快速清除铁质污染物的目的。</p>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-light bg-light" role="alert">
+                            详细说明
+                        </div>
+                        <br>
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <p>易清理液态管道捕集器可与管道连接，用于清除料浆中的铁质污染物。</p>
+                            <p>当料浆流经捕集器套管表面时，铁质污染物被吸附在套管表面，将磁系和套管一同取出后， 磁系与套管分离即可达到快速清除铁质污染物的目的。</p>
+                        </div>
+
+                        <h4>特点与优势：</h4>
+                        <ul>
+                            <li>全不锈钢结构</li>
+                            <li>磁棒直径25mm</li>
+                            <li>稀土磁格栅可满足洁具设计</li>
+                            <li>表面处理方式有喷砂和抛光</li>
+                            <li>可用于最苛刻的洁具环境</li>
+                            <li>方格栅尺寸规格：150mmWX150mmL~350mmWx350mmL</li>
+                            <li>圆格栅尺寸规格：Dia152mm~Dia508mm</li>
+                        </ul>
+                        <h4>可选配置：</h4>
+                        <ul>
+                            <li>多种场强和耐温标准可供选择</li>
+                            <li>支架表面可焊接分流条，增强物料与磁棒接触面积，从而增强除铁效果</li>
+                            <li>带套管的易清理结构，便于快速清理磁棒表面杂铁</li>
+                            <li>可选用带清洁装置的格栅</li>
+                        </ul>
+                        <h4>用途：</h4>
+                        通常安装在料仓、不规则形状料斗、封闭溜槽等斜坡上以及垂直管路中。
+                        <h4>处理物料：</h4>
+                        塑料粒子，糖类、药粉、大米、谷类、食品添加剂、奶粉、药粉等干式自由下落的粉料或颗粒料。
+                    </div>
+                    <!-- end产品概述 -->
+
+                    <!-- 规格参数 -->
+                    <div id="productSpecifications" style="padding-top:70px;">
+                        <div class="alert alert-light bg-light" role="alert">
+                            规格参数
+                        </div>
+                        <p>...</p>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr class="table-info">
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- end规格参数 -->
+
+                    <!-- 产品选项 -->
+                    <div id="productOptions" style="padding-top:70px;">
+                        <div class="alert alert-light bg-light" role="alert">
+                            产品选项
+                        </div>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                    </div>
+                    <!-- end产品选项 -->
+
+                    <!-- 产品问答 -->
+                    <div id="questionAndAnswer" style="padding-top:70px;">
+                        <div class="alert alert-light bg-light" role="alert">
+                            产品问答
+                        </div>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                    </div>
+                    <!-- end 产品问答 -->
+
+                    <!-- 资料下载 -->
+                    <div id="dataDownload" style="padding-top:70px;">
+                        <div class="alert alert-light bg-light" role="alert">
+                            资料下载
+                        </div>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                        <p>...</p>
+                    </div>
+                    <!-- end 资料下载 -->
+                </div>
+                <!-- end文章主要内容 -->
+
             </main>
-
         </div>
-
     </div>
+
     <script>
+        // 作用于菜单，增加向右、向下的箭头
         $(document).ready(function () {
             // 增加向有的箭头
             $(".collapse.show").each(function () {
@@ -337,12 +417,12 @@
     </script>
 
     <script type="text/javascript">
-        var top = $("#navbar-example2").offset().top;
+        // 作用于产品细节导航，把导航栏固定到顶端
         $(window).scroll(function () {
             if ($(window).scrollTop() >= 150) {
-                $("#navbar-example2").attr("class", "navbar navbar-light bg-light sticky-top");
+                $("#navbar-productDetails").attr("class", "navbar navbar-light bg-light sticky-top");
             } else {
-                $("#navbar-example2").attr("class", "navbar navbar-light bg-light");
+                $("#navbar-productDetails").attr("class", "navbar navbar-light bg-light");
             }
         }).trigger("scroll");
     </script>
