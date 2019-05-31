@@ -1,0 +1,46 @@
+{
+    "typeOne": [
+        {
+            "fileName": "product1",
+            "title": "product one",
+            "keywords":"",
+            "description":"",
+            "specifications":"",
+            "options":"",
+            "questionAndAnswer":"",
+            "dataDownload":""
+        },
+        {
+            "fileName": "product2",
+            "title": "product two",
+            "keywords":"",
+            "description":"",
+            "specifications":"",
+            "options":"",
+            "questionAndAnswer":"",
+            "dataDownload":""
+        }
+    ],
+    "typeTwo": [
+        {
+            "fileName": "product1",
+            "title": "product one",
+            "keywords":"",
+            "description":"",
+            "specifications":"",
+            "options":"",
+            "questionAndAnswer":"",
+            "dataDownload":""
+        },
+        {
+            "fileName": "product2",
+            "title": "product two",
+            "keywords":"",
+            "description":"",
+            "specifications":"",
+            "options":"",
+            "questionAndAnswer":"",
+            "dataDownload":""
+        }
+    ]
+}
